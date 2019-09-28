@@ -33,6 +33,7 @@ class Home extends Component{
                         { this.state.movies.map( (e) => {
                             return(
                                 <article className="movies__item" key={e.id}>
+                                    {/* <Link to=''></Link> */}
                                     <strong className="movies__title"> { e.nome } </strong>
                                     <div className="movies__shadow"></div>
                                     <img src={e.foto} alt={e.nome} />

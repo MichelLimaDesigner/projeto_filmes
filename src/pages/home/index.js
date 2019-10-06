@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./home.css";
+import { Link } from 'react-router-dom';
 
 class Home extends Component{
     constructor(props){
@@ -33,10 +34,11 @@ class Home extends Component{
                         { this.state.movies.map( (e) => {
                             return(
                                 <article className="movies__item" key={e.id}>
-                                    {/* <Link to=''></Link> */}
-                                    <strong className="movies__title"> { e.nome } </strong>
-                                    <div className="movies__shadow"></div>
-                                    <img src={e.foto} alt={e.nome} />
+                                    <Link to={'/filmes/' + e.id} className="movies__link">
+                                        <strong className="movies__title"> { e.nome } </strong>
+                                        <div className="movies__shadow"></div>
+                                        <img src={e.foto} alt={e.nome} />
+                                    </Link>
                                 </article>
                             )
                         }) }

@@ -3,9 +3,11 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 .app {
     width: 100%;
     min-height: 100vh;
     text-align: center;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }

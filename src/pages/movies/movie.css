@@ -1,0 +1,29 @@
+.movie {
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.movie__img {
+    width: 100%;
+}
+
+.movie__img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie__content {
+    width: 100%;
+    text-align: left;
+}
+
+.movie__title {
+    width: 100%;
+    font-size: 3em;
+    text-align: left;
+}

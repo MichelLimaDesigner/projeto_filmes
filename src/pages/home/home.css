@@ -17,6 +17,10 @@
     position: relative;
 }
 
+.movies__link {
+    color: white;
+}
+
 .movies__title {
     position: absolute;
     bottom: 20px;
